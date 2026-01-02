@@ -1,7 +1,54 @@
 ---
 name: cloud-architect
-description: Use this agent when designing distributed systems architecture for agentic applications, particularly during Phase III and Phase V of development. This includes designing multi-agent handoff logic using OpenAI Agents SDK, architecting Kafka-based event streaming patterns, configuring Dapr components for microservices communication, and ensuring the system can scale to handle thousands of concurrent Todo events.\n\nExamples:\n<example>\nContext: User is working on Phase III of the Todo application and needs to design how different AI agents coordinate tasks.\nuser: "I need to figure out how the categorization agent should hand off to the reminder agent"\nassistant: "I'm going to use the Task tool to launch the cloud-architect agent to design the agent handoff workflow"\n<commentary>\nSince this involves designing multi-agent coordination logic (Phase III), use the cloud-architect agent to architect the handoff mechanism.\n</commentary>\n</example>\n\n<example>\nContext: User is implementing Phase V and needs to set up async reminder notifications.\nuser: "How should I handle sending reminder notifications asynchronously?"\nassistant: "I'll invoke the cloud-architect agent to design the Kafka-based event streaming pattern for async notifications"\n<commentary>\nAsync task notification with event streaming is a distributed systems concern (Phase V), perfect for cloud-architect.\n</commentary>\n</example>\n\n<example>\nContext: User is designing the overall system architecture.\nuser: "We need to ensure the system can handle 10,000 concurrent Todo creation events"\nassistant: "Let me use the cloud-architect agent to architect the scalable distributed systems solution"\n<commentary>\nScalability planning for high-throughput events requires distributed systems expertise from cloud-architect.\n</commentary>\n</example>\n\n<example>\nContext: User is integrating MCP tools with OpenAI Agents SDK.\nuser: "I need to integrate the Todo database as an MCP tool for the agents"\nassistant: "I'll use the cloud-architect agent to design the MCP tool integration pattern"\n<commentary>\nMCP tool integration is part of Phase III agent architecture, requiring cloud-architect expertise.\n</commentary>\n</example>\n\n<example>\nContext: Proactive usage - after writing agent code.\nuser: "I just implemented the categorization agent and reminder agent"\nassistant: "Now let me use the cloud-architect agent to review the agent handoff logic and ensure it follows best practices"\n<commentary>\nProactively use cloud-architect after implementing agent components to validate distributed systems patterns.\n</commentary>\n</example>
-tools: 
+description: |
+  Use this agent when designing distributed systems architecture for agentic applications, particularly during Phase III and Phase V of development. This includes designing multi-agent handoff logic using OpenAI Agents SDK, architecting Kafka-based event streaming patterns, configuring Dapr components for microservices communication, and ensuring the system can scale to handle thousands of concurrent Todo events.
+
+  Examples:
+  <example>
+  Context: User is working on Phase III of the Todo application and needs to design how different AI agents coordinate tasks.
+  user: "I need to figure out how the categorization agent should hand off to the reminder agent"
+  assistant: "I'm going to use the Task tool to launch the cloud-architect agent to design the agent handoff workflow"
+  <commentary>
+  Since this involves designing multi-agent coordination logic (Phase III), use the cloud-architect agent to architect the handoff mechanism.
+  </commentary>
+  </example>
+
+  <example>
+  Context: User is implementing Phase V and needs to set up async reminder notifications.
+  user: "How should I handle sending reminder notifications asynchronously?"
+  assistant: "I'll invoke the cloud-architect agent to design the Kafka-based event streaming pattern for async notifications"
+  <commentary>
+  Async task notification with event streaming is a distributed systems concern (Phase V), perfect for cloud-architect.
+  </commentary>
+  </example>
+
+  <example>
+  Context: User is designing the overall system architecture.
+  user: "We need to ensure the system can handle 10,000 concurrent Todo creation events"
+  assistant: "Let me use the cloud-architect agent to architect the scalable distributed systems solution"
+  <commentary>
+  Scalability planning for high-throughput events requires distributed systems expertise from cloud-architect.
+  </commentary>
+  </example>
+
+  <example>
+  Context: User is integrating MCP tools with OpenAI Agents SDK.
+  user: "I need to integrate the Todo database as an MCP tool for the agents"
+  assistant: "I'll use the cloud-architect agent to design the MCP tool integration pattern"
+  <commentary>
+  MCP tool integration is part of Phase III agent architecture, requiring cloud-architect expertise.
+  </commentary>
+  </example>
+
+  <example>
+  Context: Proactive usage - after writing agent code.
+  user: "I just implemented the categorization agent and reminder agent"
+  assistant: "Now let me use the cloud-architect agent to review the agent handoff logic and ensure it follows best practices"
+  <commentary>
+  Proactively use cloud-architect after implementing agent components to validate distributed systems patterns.
+  </commentary>
+  </example>
+tools: []
 model: sonnet
 color: yellow
 ---

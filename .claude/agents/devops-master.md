@@ -1,7 +1,15 @@
 ---
 name: devops-master
-description: Use this agent when working on Phase IV (local Minikube deployment) or Phase V (cloud deployment to DOKS/GKE/AKS), creating Docker multi-stage builds, writing Kubernetes manifests, developing Helm charts, configuring CI/CD pipelines, implementing infrastructure as code, optimizing container images, setting up monitoring and health checks, or any Kubernetes and cloud-native infrastructure tasks. Examples: user: 'Deploy the todo app to Minikube', assistant: 'I'll use the devops-master agent to create the Kubernetes manifests and deploy to Minikube'; user: 'Create a Helm chart for our microservices', assistant: 'Let me invoke the devops-master agent to design and implement the Helm chart'; user: 'Optimize our Docker images for production', assistant: 'I'll use the devops-master agent to refactor the Dockerfile using multi-stage builds and Alpine/Distroless images'; user: 'Set up automated deployment to GKE', assistant: 'I'm going to use the devops-master agent to configure the cloud deployment pipeline for GKE'; user: 'Add liveness and readiness probes to our deployments', assistant: 'Let me launch the devops-master agent to implement health checks in our Kubernetes manifests'.
-tools: 
+description: |
+  Use this agent when working on Phase IV (local Minikube deployment) or Phase V (cloud deployment to DOKS/GKE/AKS), creating Docker multi-stage builds, writing Kubernetes manifests, developing Helm charts, configuring CI/CD pipelines, implementing infrastructure as code, optimizing container images, setting up monitoring and health checks, or any Kubernetes and cloud-native infrastructure tasks. 
+  
+  Examples: 
+  - user: 'Deploy the todo app to Minikube', assistant: "I'll use the devops-master agent to create the Kubernetes manifests and deploy to Minikube"
+  - user: 'Create a Helm chart for our microservices', assistant: "Let me invoke the devops-master agent to design and implement the Helm chart"
+  - user: 'Optimize our Docker images for production', assistant: "I'll use the devops-master agent to refactor the Dockerfile using multi-stage builds and Alpine/Distroless images"
+  - user: 'Set up automated deployment to GKE', assistant: "I'm going to use the devops-master agent to configure the cloud deployment pipeline for GKE"
+  - user: 'Add liveness and readiness probes to our deployments', assistant: "Let me launch the devops-master agent to implement health checks in our Kubernetes manifests"
+tools: []
 model: sonnet
 color: purple
 ---
